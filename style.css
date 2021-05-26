@@ -1,0 +1,79 @@
+body {
+  background-color: wheat;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project img {
+  border: 2px solid black;
+  border-radius: 50px;
+  align-content: center;
+  margin: 20px;
+}
+
+.project {
+  border: 20px;
+  background-color: rgb(247, 247, 247);
+  width: 300px;
+  margin: 10px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(233, 14, 14);
+  font-size: 20px;
+  font-family: algerian;
+  font-weight: 400;
+  color: white;
+  margin: 20px;
+}
+
+.body {
+  background-image: url("images/main2.jpg");
+  font-size: 20px;
+  font-family: algerian;
+  font-weight: 400;
+  color: white;
+  margin: 20px;
+  padding: 10px;
+}
+
+ol {
+  margin: 10px;
+}
+
+.header a:link {
+  color: brown;
+}
+.header a:visited {
+  color: chartreuse;
+}
+.header a:hover {
+  color: darkblue;
+}
+.project {
+  position: relative;
+}
+
+.project h2 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.project:hover h2 {
+  opacity: 1;
+}
+
+.project:hover img {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
